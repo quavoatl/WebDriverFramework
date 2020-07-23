@@ -8,9 +8,11 @@
     <Authors>Romeo.WebDriverFramework</Authors>
     <PackageId>Romeo.WebDriverFramework</PackageId>
     <Company>Romeo.WebDriverFramework</Company>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nancy" Version="2.0.0" />
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="84.0.4147.3001" />

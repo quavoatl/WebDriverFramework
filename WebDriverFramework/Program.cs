@@ -1,4 +1,5 @@
 ﻿using System;
+using WebDriverFramework.WebDriverBase;
 
 namespace WebDriverFramework
 {
@@ -6,7 +7,10 @@ namespace WebDriverFramework
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MyWebDriverFactory driverFact = new MyWebDriverFactory();
+            driverFact.LoadChromeOptions();
+            var myDriver =  driverFact.InitializeBrowser();
+            myDriver.NavigateToURL();
         }
     }
 }
